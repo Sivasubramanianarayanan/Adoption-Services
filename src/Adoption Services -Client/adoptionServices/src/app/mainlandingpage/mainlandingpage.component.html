@@ -1,0 +1,435 @@
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-lg cus-modal-dialog modal-dialog-centered">
+        <div class="modal-content cus-modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title cus-modal-title">Add Application</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body cus-modal-body">
+            <div class="cus-modal-background py-3 px-5">
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3 mt-3">
+                    <label for="name" class="form-label cus-form-label">Application Name</label>
+                    <input type="email" class="form-control cus-form-control btna" id="name" placeholder="Enter app name"
+                      name="name">
+                  </div>
+                </div>
+                <div class="col">
+                  <div ngbDropdown class="d-inline-block py-3 ms-5 w-100">
+                  <label for="owner" class="form-label cus-form-label ">Solution Owner</label> <br>
+                    <button type="button" class="btn btna  custom-dropdown-menu" id="dropdownBasic1" ngbDropdownToggle>
+                      Select the solution owner
+                    </button>
+                    <div ngbDropdownMenu  aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem> User Role Management</button>
+                      <button ngbDropdownItem>Log out</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="owner" class="form-label cus-form-label">Services</label>
+                <div class="cus-img-checkbox">
+                  <div class="cus-cb-element">
+                    <input type="checkbox" name="platform" value="instagram" id="instagram">
+                    <label for="instagram">
+                      <div class="icon">
+                        <img class="w-100" src="assets/images/faq.svg">
+                      </div>
+
+                      <div class="title">
+                        Read FAQ
+                      </div>
+                    </label>
+                  </div>
+                  <div class="cus-cb-element">
+                    <input type="checkbox" name="platform" value="twitch" id="twitch">
+                    <label for="twitch">
+                      <div class="icon">
+                        <img class="w-100" src="assets/images/faq_2.svg">
+                      </div>
+                      <div class="title">
+                        Contact
+                      </div>
+                    </label>
+                  </div>
+                  <div class="cus-cb-element">
+                    <input type="checkbox" name="platform" value="slack" id="slack">
+                    <label for="slack">
+                      <div class="icon">
+                        <img class="w-100" src="assets/images/faq_3.svg">
+                      </div>
+                      <div class="title">
+                        Communication
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-warning px-4" data-bs-dismiss="modal">Add</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="wrapper">
+
+      <div class="page-container">
+        <div class="container">
+          <div class="dashed-box mb-5" type="button" data-bs-toggle="modal" data-bs-target="#myModal">
+            <div class="dashed-box-content">
+              <div class="dashed-box-icon">
+                <fa-icon class="i-tags" [icon]="icon"></fa-icon>
+              </div>
+              <div class="dashed-box-text">Add Application</div>
+            </div>
+          </div>
+
+          <div class="table-box">
+            <div class="table-box-header d-flex justify-content-between">
+              <div class="table-box-title">Applications</div>
+              <div class="table-box-action">
+                <!-- <button class="btn btn-sm btn-success">Download</button> -->
+              </div>
+            </div>
+            <div class="table-box-body">
+              <div class="table-container">
+                <div class="table-header">
+                  <div class="table-header-tr">
+                    <div class="row align-items-center">
+
+                      <div class="col">
+                        <div class="row">
+                          <div class="col-2">
+                            <div class="table-th">App Name</div>
+                          </div>
+                          <div class="col-2">
+                            <div class="table-th">Solution Owner</div>
+                          </div>
+                          <div class="col-5">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="table-th text-center">Read FAQ</div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-th text-center">Contact us</div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-th text-center">Communication</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="table-th text-center">Action</div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="table-body">
+                  <div class="table-body-tr">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <div class="table-td">Supplier Chain Portal</div>
+                          </div>
+                          <div class="col-2">
+                            <div class="table-td">Vijay</div>
+                          </div>
+                          <div class="col-5">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="table-td">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <button class="btn btn-sm btn-secondary px-3"><i
+                                    class="fas fa-eye me-2"></i>View</button>
+                                <button class="btn btn-sm btn-danger px-3 ms-2"><i
+                                    class="fas fa-trash-alt me-2"></i>Delete</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="table-body-tr">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <div class="table-td">Intake</div>
+                          </div>
+                          <div class="col-2">
+                            <div class="table-td">Melchi Issac</div>
+                          </div>
+                          <div class="col-5">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="table-td">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <button class="btn btn-sm btn-secondary px-3"><i
+                                    class="fas fa-eye me-2"></i>View</button>
+                                <button class="btn btn-sm btn-danger px-3 ms-2"><i
+                                    class="fas fa-trash-alt me-2"></i>Delete</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="table-body-tr">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <div class="table-td">Chatbot</div>
+                          </div>
+                          <div class="col-2">
+                            <div class="table-td">Arvind</div>
+                          </div>
+                          <div class="col-5">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="table-td">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <button class="btn btn-sm btn-secondary px-3"><i
+                                    class="fas fa-eye me-2"></i>View</button>
+                                <button class="btn btn-sm btn-danger px-3 ms-2"><i
+                                    class="fas fa-trash-alt me-2"></i>Delete</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="table-body-tr">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <div class="table-td">Project Tracker</div>
+                          </div>
+                          <div class="col-2">
+                            <div class="table-td">Mahesh Amirthalingam</div>
+                          </div>
+                          <div class="col-5">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="table-td">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <button class="btn btn-sm btn-secondary px-3"><i
+                                    class="fas fa-eye me-2"></i>View</button>
+                                <button class="btn btn-sm btn-danger px-3 ms-2"><i
+                                    class="fas fa-trash-alt me-2"></i>Delete</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="table-body-tr">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <div class="table-td">SET</div>
+                          </div>
+                          <div class="col-2">
+                            <div class="table-td">Harish R</div>
+                          </div>
+                          <div class="col-5">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="table-td">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <button class="btn btn-sm btn-secondary px-3"><i
+                                    class="fas fa-eye me-2"></i>View</button>
+                                <button class="btn btn-sm btn-danger px-3 ms-2"><i
+                                    class="fas fa-trash-alt me-2"></i>Delete</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="table-body-tr">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <div class="table-td">Box Api</div>
+                          </div>
+                          <div class="col-2">
+                            <div class="table-td">VishnuPriya</div>
+                          </div>
+                          <div class="col-5">
+                            <div class="row">
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="table-td text-center">
+                                  <span class="table-status text-success"><i class="fas fa-check-circle"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="table-td">
+                              <div class="d-flex align-items-center justify-content-center">
+                                <button class="btn btn-sm btn-secondary px-3"><i
+                                    class="fas fa-eye me-2"></i>View</button>
+                                <button class="btn btn-sm btn-danger px-3 ms-2"><i
+                                    class="fas fa-trash-alt me-2"></i>Delete</button>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

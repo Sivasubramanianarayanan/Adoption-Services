@@ -1,0 +1,22 @@
+<div class="header">
+    <div class="header-block d-flex flex-row justify-content-between">
+      <div class="header-left">
+        <div class="app-brand">
+        </div>
+      </div>
+      
+      <div ngbDropdown class="d-inline-block py-3 ms-5">
+        <button type="button" class="btn btn-out" id="dropdownBasic1" ngbDropdownToggle>
+          Sivasubramanian N
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <a class="dropdown-item" [routerLink]="['/roles']">User Role Management</a>
+          <button ngbDropdownItem>Log out</button>
+        </div>
+      </div>
+      <div class="header-right d-flex flex-row align-items-stretch justify-content-between">
+        <div class="header-right-actions d-flex flex-row align-items-stretch">
+        </div>
+      </div>
+    </div>
+</div>

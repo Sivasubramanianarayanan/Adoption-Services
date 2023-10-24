@@ -1,0 +1,33 @@
+
+  <div class="rippon-block">
+    <div class="rippon-header">
+      <div class="container">
+        <div class="rippon-details">
+          <button class="btn btn-warning px-4">
+            <fa-icon class="i-tags fa-xs me-3" [icon]="icon"></fa-icon>Back
+          </button>
+          <div class="rippon-title">Vizhub</div>
+        </div>
+      </div>
+    </div>
+    <div class="rippon-footer">
+      <ul class="nav nav-tabs justify-content-center b-0" style="position:relative;">
+        <li class="nav-item cus-nav-item">
+          <a class="nav-link cus-nav-link" [routerLink]="['mainaplicationdeatials']" data-bs-toggle="tab" href="#home">Application Details</a>
+        </li>
+        <li class="nav-item cus-nav-item">
+          <a class="nav-link cus-nav-link" data-bs-toggle="tab" [routerLink]="['readfaq']" href="#menu1">Read FAQ</a>
+        </li>
+        <li class="nav-item cus-nav-item">
+          <a class="nav-link cus-nav-link" data-bs-toggle="tab" [routerLink]="['contact']" href="#menu2">Contact</a>
+        </li>
+        <li class="nav-item cus-nav-item">
+          <a class="nav-link cus-nav-link" data-bs-toggle="tab" [routerLink]="['communication']" href="#menu3">Communication</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+
+
+
